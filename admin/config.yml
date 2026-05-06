@@ -1,0 +1,101 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - label: "Home Page"
+    name: "home"
+    files:
+      - label: "Homepage Content"
+        name: "home"
+        file: "data/home.yml"
+        fields:
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "TW Signature", name: "tw_signature", widget: "image" }
+          - { label: "TW Number PNG", name: "tw_number", widget: "image" }
+          - { label: "Logan Signature", name: "logan_signature", widget: "image" }
+          - { label: "Logan Number PNG", name: "logan_number", widget: "image" }
+          - { label: "Hero Background", name: "hero_background", widget: "image" }
+
+  - label: "Schedule"
+    name: "schedule"
+    files:
+      - label: "Race Schedule"
+        name: "schedule"
+        file: "data/schedule.yml"
+        fields:
+          - label: "Races"
+            name: "races"
+            widget: "list"
+            fields:
+              - { label: "Date", name: "date", widget: "datetime" }
+              - { label: "Track", name: "track", widget: "string" }
+              - { label: "Location", name: "location", widget: "string", required: false }
+              - { label: "Class", name: "class", widget: "string", required: false }
+              - { label: "Driver", name: "driver", widget: "select", options: ["TW Reed", "Logan Conner", "Both"] }
+              - { label: "Result", name: "result", widget: "string", required: false }
+              - { label: "Notes", name: "notes", widget: "text", required: false }
+
+  - label: "Team"
+    name: "team"
+    files:
+      - label: "Team Page"
+        name: "team"
+        file: "data/team.yml"
+        fields:
+          - { label: "Team Intro", name: "team_intro", widget: "text" }
+          - { label: "TW Reed Bio", name: "tw_bio", widget: "text" }
+          - { label: "Logan Conner Bio", name: "logan_bio", widget: "text" }
+
+  - label: "Sponsors"
+    name: "sponsors"
+    files:
+      - label: "Sponsor List"
+        name: "sponsors"
+        file: "data/sponsors.yml"
+        fields:
+          - label: "Sponsors"
+            name: "sponsors"
+            widget: "list"
+            fields:
+              - { label: "Sponsor Name", name: "name", widget: "string" }
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Website Link", name: "url", widget: "string", required: false }
+              - { label: "Show in Scrolling Strip", name: "active", widget: "boolean", default: true }
+
+  - label: "Media"
+    name: "media"
+    files:
+      - label: "Media Gallery"
+        name: "media"
+        file: "data/media.yml"
+        fields:
+          - label: "Media Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Video or Social Link", name: "link", widget: "string", required: false }
+              - { label: "Caption", name: "caption", widget: "text", required: false }
+
+  - label: "Merch"
+    name: "merch"
+    files:
+      - label: "Merch Items"
+        name: "merch"
+        file: "data/merch.yml"
+        fields:
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            fields:
+              - { label: "Product Name", name: "name", widget: "string" }
+              - { label: "Photo", name: "photo", widget: "image", required: false }
+              - { label: "Price", name: "price", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Available", name: "available", widget: "boolean", default: true }
