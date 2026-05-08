@@ -1,0 +1,91 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+collections:
+  - label: "Home Page"
+    name: "home"
+    files:
+      - label: "Homepage Content"
+        name: "home"
+        file: "data/home.yml"
+        fields:
+          - { label: "TW Signature", name: "tw_signature", widget: "image" }
+          - { label: "TW Number PNG", name: "tw_number", widget: "image" }
+          - { label: "Logan Signature", name: "logan_signature", widget: "image" }
+          - { label: "Logan Number PNG", name: "logan_number", widget: "image" }
+          - { label: "Hero Background", name: "hero_background", widget: "image" }
+  - label: "News"
+    name: "news"
+    files:
+      - label: "News Stories"
+        name: "news"
+        file: "data/news.yml"
+        fields:
+          - label: "Stories"
+            name: "stories"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Story Link", name: "link", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime" }
+              - { label: "Summary", name: "summary", widget: "text", required: false }
+  - label: "Schedule"
+    name: "schedule"
+    files:
+      - label: "Upcoming Races"
+        name: "schedule"
+        file: "data/schedule.yml"
+        fields:
+          - label: "Races"
+            name: "races"
+            widget: "list"
+            fields:
+              - { label: "Date", name: "date", widget: "datetime" }
+              - { label: "Track", name: "track", widget: "string" }
+              - { label: "Location", name: "location", widget: "string", required: false }
+              - { label: "Class", name: "class", widget: "string", required: false }
+              - { label: "Driver", name: "driver", widget: "select", options: ["TW Reed", "Logan Conner", "Both"] }
+              - { label: "Notes", name: "notes", widget: "text", required: false }
+      - label: "Past Races"
+        name: "past_races"
+        file: "data/past-races.yml"
+        fields:
+          - label: "Past Races"
+            name: "past_races"
+            widget: "list"
+            fields:
+              - { label: "Race Name", name: "race_name", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime" }
+              - { label: "Driver Name", name: "driver", widget: "select", options: ["TW Reed", "Logan Conner"] }
+              - { label: "Car Image", name: "car_image", widget: "image" }
+              - { label: "Starting Position", name: "started", widget: "string" }
+              - { label: "Finishing Position", name: "finished", widget: "string" }
+  - label: "Team"
+    name: "team"
+    files:
+      - label: "Team Page"
+        name: "team"
+        file: "data/team.yml"
+        fields:
+          - { label: "Our Story", name: "our_story", widget: "text" }
+          - { label: "Championships", name: "championships", widget: "string" }
+          - { label: "Wins", name: "wins", widget: "string" }
+          - { label: "Podium Finishes", name: "podiums", widget: "string" }
+  - label: "Sponsors"
+    name: "sponsors"
+    files:
+      - label: "Sponsor List"
+        name: "sponsors"
+        file: "data/sponsors.yml"
+        fields:
+          - label: "Sponsors"
+            name: "sponsors"
+            widget: "list"
+            fields:
+              - { label: "Sponsor Name", name: "name", widget: "string" }
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Website Link", name: "url", widget: "string", required: false }
+              - { label: "Show in Scrolling Strip", name: "active", widget: "boolean", default: true }

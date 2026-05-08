@@ -1,0 +1,6 @@
+stories:
+  - title: "News Story One"
+    image: "/assets/news/news-1.jpg"
+    link: "#"
+    date: "2026-01-01T12:00:00"
+    summary: "Add the newest story here."
