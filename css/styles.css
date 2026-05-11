@@ -77,3 +77,63 @@
 .sponsor-remax img {
   max-width: 260px !important;
 }
+
+/* Footer ticker individual sponsor logo sizing */
+
+.ticker-logo {
+  object-fit: contain !important;
+  height: auto !important;
+  max-height: 75px !important;
+}
+
+.ticker-precision-coating {
+  max-width: 320px !important;
+}
+
+.ticker-ka-electric {
+  max-width: 300px !important;
+}
+
+.ticker-sir-goonys {
+  max-width: 260px !important;
+}
+
+.ticker-akc-mobile-repair {
+  max-width: 275px !important;
+}
+
+.ticker-mcdonalds {
+  max-width: 200px !important;
+}
+
+.ticker-the-pool-dude {
+  max-width: 275px !important;
+}
+
+.ticker-gordys-stump-grinding {
+  max-width: 285px !important;
+}
+
+.ticker-underdog-mechanical {
+  max-width: 285px !important;
+}
+
+.ticker-james-wilson-company {
+  max-width: 285px !important;
+}
+
+.ticker-state-farm {
+  max-width: 240px !important;
+}
+
+.ticker-all-about-concrete {
+  max-width: 330px !important;
+}
+
+.ticker-davys-painting {
+  max-width: 285px !important;
+}
+
+.ticker-remax {
+  max-width: 260px !important;
+}
