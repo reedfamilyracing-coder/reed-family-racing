@@ -15,7 +15,7 @@
 }
 
 .sponsor-precision-coating img {
-  width: 500px !important;
+  width: 260px !important;
   height: 140px !important;
 }
 
@@ -77,4 +77,22 @@
 .sponsor-remax img {
   width: 255px !important;
   height: 130px !important;
+}
+.sponsor-logo-grid {
+  grid-template-columns: repeat(3, 1fr) !important;
+  align-items: center !important;
+}
+
+.sponsor-logo-card {
+  width: 100% !important;
+  height: 170px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.sponsor-logo-card img {
+  max-width: 100% !important;
+  max-height: 150px !important;
+  object-fit: contain !important;
 }
