@@ -15,7 +15,7 @@
 }
 
 .sponsor-precision-coating img {
-  width: 260px !important;
+  max-width: 320px !important;
   height: 140px !important;
 }
 
