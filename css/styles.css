@@ -27,7 +27,7 @@
 /* Adjust individual sponsor sizes here */
 
 .sponsor-precision-coating img {
-  max-width: 730px !important;
+  max-width: 230px !important;
 }
 
 .sponsor-ka-electric img {
@@ -148,7 +148,7 @@
 .ticker-track img.ticker-precision-coating {
   width: 260px !important;
   max-width: 260px !important;
-  max-height: 130px !important;
+  max-height: 90px !important;
 }
 
 .ticker-track img.ticker-ka-electric {
