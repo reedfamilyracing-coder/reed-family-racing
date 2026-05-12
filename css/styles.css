@@ -137,3 +137,88 @@
 .ticker-remax {
   max-width: 260px !important;
 }
+
+/* Individual footer ticker logo sizing */
+
+.ticker-track img.ticker-logo {
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+.ticker-track img.ticker-precision-coating {
+  width: 420px !important;
+  max-width: 420px !important;
+  max-height: 90px !important;
+}
+
+.ticker-track img.ticker-ka-electric {
+  width: 330px !important;
+  max-width: 330px !important;
+  max-height: 90px !important;
+}
+
+.ticker-track img.ticker-sir-goonys {
+  width: 290px !important;
+  max-width: 290px !important;
+  max-height: 90px !important;
+}
+
+.ticker-track img.ticker-akc-mobile-repair {
+  width: 310px !important;
+  max-width: 310px !important;
+  max-height: 90px !important;
+}
+
+.ticker-track img.ticker-mcdonalds {
+  width: 230px !important;
+  max-width: 230px !important;
+  max-height: 90px !important;
+}
+
+.ticker-track img.ticker-the-pool-dude {
+  width: 310px !important;
+  max-width: 310px !important;
+  max-height: 90px !important;
+}
+
+.ticker-track img.ticker-gordys-stump-grinding {
+  width: 320px !important;
+  max-width: 320px !important;
+  max-height: 90px !important;
+}
+
+.ticker-track img.ticker-underdog-mechanical {
+  width: 320px !important;
+  max-width: 320px !important;
+  max-height: 90px !important;
+}
+
+.ticker-track img.ticker-james-wilson-company {
+  width: 320px !important;
+  max-width: 320px !important;
+  max-height: 90px !important;
+}
+
+.ticker-track img.ticker-state-farm {
+  width: 270px !important;
+  max-width: 270px !important;
+  max-height: 90px !important;
+}
+
+.ticker-track img.ticker-all-about-concrete {
+  width: 420px !important;
+  max-width: 420px !important;
+  max-height: 90px !important;
+}
+
+.ticker-track img.ticker-davys-painting {
+  width: 320px !important;
+  max-width: 320px !important;
+  max-height: 90px !important;
+}
+
+.ticker-track img.ticker-remax {
+  width: 290px !important;
+  max-width: 290px !important;
+  max-height: 90px !important;
+}
