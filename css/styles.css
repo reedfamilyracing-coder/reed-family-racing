@@ -87,7 +87,7 @@
 }
 
 .ticker-precision-coating {
-  max-width: 2920px !important;
+  max-width: 260px !important;
 }
 
 .ticker-ka-electric {
@@ -146,9 +146,9 @@
 }
 
 .ticker-track img.ticker-precision-coating {
-  width: 820px !important;
-  max-width: 820px !important;
-  max-height: 90px !important;
+  width: 260px !important;
+  max-width: 260px !important;
+  max-height: 190px !important;
 }
 
 .ticker-track img.ticker-ka-electric {
