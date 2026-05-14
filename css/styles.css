@@ -222,3 +222,14 @@
   max-width: 290px !important;
   max-height: 90px !important;
 }
+
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between image and text */
+}
+
+.dropdown-number {
+  width: 32px;   /* adjust size of the number */
+  height: auto;
+}
