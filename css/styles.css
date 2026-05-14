@@ -225,11 +225,11 @@
 
 .dropdown-menu a {
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 8px; /* space between image and text */
 }
 
 .dropdown-number {
-  width: 8px;   /* adjust size of the number */
+  width: 1px;   /* adjust size of the number */
   height: auto;
 }
