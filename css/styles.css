@@ -230,7 +230,7 @@
 }
 
 .dropdown-number {
-  width: 10px;   /* adjust size of the number */
-  max-width: 10px !important;
-  max-height: 10px !important;
+  width: 20px;   /* adjust size of the number */
+  max-width: 20px !important;
+  max-height: 20px !important;
 }
