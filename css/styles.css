@@ -230,9 +230,9 @@
 }
 
 .dropdown-number {
-  width: 40px;   /* adjust size of the number */
-  max-width: 40px !important;
-  max-height: 40px !important;
+  width: 80px;   /* adjust size of the number */
+  max-width: 80px !important;
+  max-height: 80px !important;
 }
 
 .gallery-grid {
