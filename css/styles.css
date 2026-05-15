@@ -255,3 +255,8 @@
   transform: scale(1.02);
   transition: 0.2s ease;
 }
+
+.dropdown-menu a {
+  padding-top: 22px !important;
+  padding-bottom: 14px !important;
+}
