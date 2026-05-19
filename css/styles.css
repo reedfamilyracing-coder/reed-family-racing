@@ -260,3 +260,24 @@
   padding-top: 56px !important;
   padding-bottom: 14px !important;
 }
+
+.dropdown-driver-link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+  padding: 14px 18px !important;
+}
+
+.dropdown-number-img {
+  width: 54px !important;
+  height: 34px !important;
+  object-fit: contain !important;
+  display: block !important;
+  flex-shrink: 0 !important;
+}
+
+.dropdown-driver-link span {
+  line-height: 1 !important;
+  display: inline-block !important;
+}
