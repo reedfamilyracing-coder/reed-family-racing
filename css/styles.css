@@ -302,3 +302,22 @@
   line-height: 1 !important;
   display: inline-block !important;
 }
+
+.dropdown-driver-link {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  padding: 18px 24px !important;
+  font-size: 1.25rem !important;
+}
+
+.dropdown-number-img {
+  width: 78px !important;
+  height: 48px !important;
+  object-fit: contain !important;
+}
+
+.dropdown-driver-link span {
+  font-size: 1.25rem !important;
+  font-weight: 900 !important;
+}
