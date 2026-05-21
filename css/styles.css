@@ -347,3 +347,18 @@
 .past-race-driver-row p {
   margin: 0 !important;
 }
+
+.schedule-time {
+  text-align: right;
+}
+
+.schedule-time strong {
+  display: block;
+  font-weight: 900;
+}
+
+.schedule-time span {
+  display: block;
+  color: var(--muted);
+  margin-top: 4px;
+}
