@@ -321,3 +321,34 @@
   font-size: 1.75rem !important;
   font-weight: 900 !important;
 }
+
+.past-race-card {
+  display: grid !important;
+  grid-template-columns: 1fr 2.5fr !important;
+  align-items: center !important;
+  gap: 28px !important;
+  text-align: left !important;
+}
+
+.past-race-drivers {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 24px !important;
+}
+
+.past-race-driver {
+  text-align: center !important;
+}
+
+.past-race-driver img {
+  width: 100% !important;
+  max-width: 300px !important;
+  max-height: 160px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 10px auto 14px !important;
+}
+
+.past-race-driver p {
+  margin: 4px 0 !important;
+}
