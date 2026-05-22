@@ -366,3 +366,7 @@
   color: var(--muted);
   margin-top: 4px;
 }
+
+.past-race-grid {
+  grid-template-columns: 1fr !important;
+}
