@@ -425,3 +425,38 @@
   text-transform: uppercase;
   letter-spacing: .08em;
 }
+
+/* Trackside Thoughts card page */
+
+.trackside-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  gap: 20px;
+}
+
+.trackside-card {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(0,0,0,.3);
+}
+
+.trackside-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+
+.trackside-card h3 {
+  padding: 0 20px;
+  margin-bottom: 8px;
+}
+
+.trackside-card p {
+  padding: 0 20px 20px;
+  color: var(--muted);
+}
