@@ -476,3 +476,8 @@
 .logo-link {
   justify-self: center !important;
 }
+
+.team-story h2 {
+  font-size: 3rem !important;
+  line-height: 1.1;
+}
