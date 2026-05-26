@@ -481,3 +481,17 @@
   font-size: 3rem !important;
   line-height: 1.1;
 }
+
+/* Team page Our Story sizing */
+
+.team-page .content-section.narrow h2,
+.content-section.narrow h2 {
+  font-size: 3rem !important;
+  line-height: 1.1 !important;
+}
+
+.team-page .content-section.narrow p,
+.content-section.narrow p {
+  font-size: 1.35rem !important;
+  line-height: 1.8 !important;
+}
