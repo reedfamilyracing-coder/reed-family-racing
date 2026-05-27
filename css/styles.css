@@ -519,8 +519,8 @@
 
 .home-photo-banner img {
   width: 100%;
-  height: 700px;
-  object-fit: contain;
+  height: 500px;
+  object-fit: cover;
   object-position: center;
   display: block;
 }
