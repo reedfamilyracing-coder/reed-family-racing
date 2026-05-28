@@ -33,3 +33,55 @@ if (teamPrevButton && teamNextButton) {
     updateTeamPhoto();
   });
 }
+
+const homeStories = [
+  {
+    title: "Latest Story One",
+    text: "Read the latest update from Reed Family Racing.",
+    image: "assets/news/news-1.jpg",
+    link: "news.html"
+  },
+  {
+    title: "Latest Story Two",
+    text: "Catch up on the second latest story from RFR.",
+    image: "assets/news/news-2.jpg",
+    link: "news.html"
+  },
+  {
+    title: "Latest Story Three",
+    text: "See another recent update from the team.",
+    image: "assets/news/news-3.jpg",
+    link: "news.html"
+  }
+];
+
+let homeStoryIndex = 0;
+
+const homeStoryLink = document.getElementById("homeStoryLink");
+const homeStoryImage = document.getElementById("homeStoryImage");
+const homeStoryTitle = document.getElementById("homeStoryTitle");
+const homeStoryText = document.getElementById("homeStoryText");
+const homeStoryPrev = document.querySelector("[data-home-story-prev]");
+const homeStoryNext = document.querySelector("[data-home-story-next]");
+
+function updateHomeStory() {
+  if (!homeStoryLink || !homeStoryImage || !homeStoryTitle || !homeStoryText) return;
+
+  const story = homeStories[homeStoryIndex];
+  homeStoryLink.href = story.link;
+  homeStoryImage.src = story.image;
+  homeStoryTitle.textContent = story.title;
+  homeStoryText.textContent = story.text;
+}
+
+if (homeStoryPrev && homeStoryNext) {
+  homeStoryPrev.addEventListener("click", () => {
+    homeStoryIndex = (homeStoryIndex - 1 + homeStories.length) % homeStories.length;
+    updateHomeStory();
+  });
+
+  homeStoryNext.addEventListener("click", () => {
+    homeStoryIndex = (homeStoryIndex + 1) % homeStories.length;
+    updateHomeStory();
+  });
+}
