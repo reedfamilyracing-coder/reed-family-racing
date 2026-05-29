@@ -587,7 +587,9 @@
 }
 
 .history-card img {
+  width: 100% !important;
   max-height: 500px !important;
   min-height: 360px !important;
-  object-fit: cover !important;
+  object-fit: contain !important;
+  background: #111 !important;
 }
