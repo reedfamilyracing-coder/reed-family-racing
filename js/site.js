@@ -9,7 +9,7 @@ const menuToggle=document.querySelector(".menu-toggle");const mobileNav=document
   description: "In 2024 RFR became a championship organization as TW Reed earned the coveted track championship at Dawgwood Speedway."
 }
 {
-  image: "assets/team/history-6.jpeg",
+  image: "assets/team/history-6.jpg",
   title: "2025",
   description: "2025 was a transition year for RFR as the team made the move from dirt to asphalt moving from karts to INEX Bandoleros."
 }];
