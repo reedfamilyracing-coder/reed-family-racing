@@ -624,3 +624,18 @@
   display: block;
   margin: 0 auto;
 }
+
+.past-race-grid {
+  grid-template-columns: 1fr !important;
+}
+
+.horizontal-result-card {
+  display: grid !important;
+  grid-template-columns: 1fr 1.6fr 1.6fr !important;
+  align-items: center !important;
+  gap: 24px !important;
+}
+
+.past-race-driver {
+  text-align: center !important;
+}
