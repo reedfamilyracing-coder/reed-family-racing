@@ -624,3 +624,46 @@
   display: block;
   margin: 0 auto;
 }
+
+.tw-profile-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.tw-driver-photo {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  display: block;
+}
+
+.tw-info-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tw-signature {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.tw-driver-facts p {
+  font-size: 1.2rem;
+  margin: 12px 0;
+  line-height: 1.6;
+}
+
+.tw-driver-facts strong {
+  color: var(--red);
+}
+
+.driver-stats-list {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,.18);
+}
