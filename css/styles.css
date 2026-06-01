@@ -629,33 +629,13 @@
   grid-template-columns: 1fr !important;
 }
 
+.past-race-grid {
+  grid-template-columns: 1fr !important;
+  max-width: 260px !important;
+  margin: 0 auto !important;
+}
+
 .horizontal-result-card {
-  display: grid !important;
-  grid-template-columns: 1fr 1.6fr 1.6fr !important;
-  align-items: center !important;
-  gap: 24px !important;
-}
-
-.past-race-driver {
-  text-align: center !important;
-}
-
-.past-race-driver h3,
-.past-race-driver p {
-  margin: 4px 0 !important;
-}
-
-.past-race-driver img {
   width: 100% !important;
   max-width: 260px !important;
-  max-height: 130px !important;
-  object-fit: contain !important;
-  display: block !important;
-  margin: 12px auto 0 !important;
 }
-
-.past-race-driver-row h3,
-.past-race-driver-row p {
-  margin: 0 !important;
-}
-
