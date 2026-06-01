@@ -617,3 +617,10 @@
   object-fit: contain !important;
   background: #111 !important;
 }
+
+.driver-page-signature {
+  width: min(700px, 90vw);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
