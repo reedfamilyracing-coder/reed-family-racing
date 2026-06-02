@@ -678,3 +678,8 @@
 .tw-career-synopsis p {
   margin-bottom: 18px;
 }
+
+.tw-career-synopsis {
+  max-width: 1400px;
+  width: 100%;
+}
