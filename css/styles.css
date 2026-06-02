@@ -702,3 +702,21 @@
 .logan-career-synopsis p {
   margin-bottom: 18px;
 }
+
+.logan-driver-facts p {
+  font-size: 1.4rem;
+  margin: 14px 0;
+  line-height: 1.7;
+}
+
+.logan-career-synopsis {
+  grid-column: 1 / -1;
+  font-size: 1.4rem;
+  line-height: 1.9;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.logan-career-synopsis p {
+  margin-bottom: 18px;
+}
