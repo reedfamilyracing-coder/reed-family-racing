@@ -682,3 +682,11 @@
 .tw-career-synopsis {
   grid-column: 1 / -1;
 }
+
+.logan-driver-facts strong {
+  color: #ffd700;
+}
+
+.logan-driver-facts .driver-stats-list {
+  border-top: 2px solid #ffcc00;
+}
