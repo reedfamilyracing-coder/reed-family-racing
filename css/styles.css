@@ -680,6 +680,5 @@
 }
 
 .tw-career-synopsis {
-  max-width: 1400px;
-  width: 100%;
+  grid-column: 1 / -1;
 }
