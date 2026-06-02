@@ -667,3 +667,14 @@
   padding-top: 18px;
   border-top: 1px solid rgba(255,255,255,.18);
 }
+
+.tw-career-synopsis {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.tw-career-synopsis p {
+  margin-bottom: 18px;
+}
