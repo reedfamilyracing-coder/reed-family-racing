@@ -720,3 +720,22 @@
 .logan-career-synopsis p {
   margin-bottom: 18px;
 }
+
+.team-stats-section {
+  align-items: stretch !important;
+}
+
+.stats-panel {
+  height: 100% !important;
+}
+
+.team-photo-viewer {
+  height: 100% !important;
+  align-items: stretch !important;
+}
+
+.team-photo-viewer img {
+  height: 100% !important;
+  max-height: none !important;
+  object-fit: cover !important;
+}
