@@ -749,3 +749,35 @@
   max-width: 90vw !important;
   height: auto !important;
 }
+
+.driver-profile-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.driver-info-panel {
+  text-align: left;
+}
+
+.logan-signature-full {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 24px;
+}
+
+.driver-details p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+.driver-photo-feature img {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  object-fit: contain;
+}
