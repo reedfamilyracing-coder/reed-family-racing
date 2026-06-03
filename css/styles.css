@@ -743,3 +743,9 @@
 .logan-signature-full {
   width: min(500px, 90vw);
 }
+
+.logan-driver-page .driver-photo-feature img {
+  width: 650px !important;
+  max-width: 90vw !important;
+  height: auto !important;
+}
