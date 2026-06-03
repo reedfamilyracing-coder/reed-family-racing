@@ -739,3 +739,7 @@
   max-height: none !important;
   object-fit: cover !important;
 }
+
+.logan-signature-full {
+  width: min(650px, 90vw);
+}
