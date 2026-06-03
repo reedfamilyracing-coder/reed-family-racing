@@ -781,3 +781,8 @@
   height: auto;
   object-fit: contain;
 }
+
+.logan-page .tw-driver-facts strong,
+.logan-page .driver-stats-list strong {
+  color: #ffd700 !important;
+}
