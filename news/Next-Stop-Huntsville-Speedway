@@ -1,1 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Next Stop: Huntsville Speedway | Reed Family Racing</title>
+  <meta name="description" content="Official website of Reed Family Racing">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
 
+<!-- paste your normal header here -->
+
+<main>
+  <section class="page-hero">
+    <h1>Next Stop: Huntsville Speedway</h1>
+    <p>Reed Family Racing prepares for another race weekend.</p>
+  </section>
+
+  <section class="content-section narrow">
+    <p>
+      Story text goes here.
+    </p>
+  </section>
+</main>
+
+<!-- paste your normal social section, footer, and sponsor ticker here -->
+
+<script src="../js/site.js"></script>
+</body>
+</html>
