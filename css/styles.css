@@ -870,3 +870,26 @@ const homeStories = [
   min-width: 100%;
   flex-shrink: 0;
 }
+
+.home-story-viewer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 18px;
+  align-items: center;
+}
+
+.home-story-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-story-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.home-story-slide {
+  min-width: 100%;
+  max-width: 100%;
+  flex: 0 0 100%;
+}
