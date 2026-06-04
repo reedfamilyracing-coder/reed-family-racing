@@ -45,22 +45,22 @@ if (teamPrevButton && teamNextButton) {
 
 const homeStories = [
   {
-    title: "Latest Story One",
+    title: "Highland Rim Recap",
     text: "Read the latest update from Reed Family Racing.",
-    image: "assets/news/news-1.jpg",
-    link: "news.html"
+    image: "assets/news/highland-rim-recap.jpg",
+    link: "news/highland-rim-recap.html"
   },
   {
-    title: "Latest Story Two",
-    text: "Catch up on the second latest story from RFR.",
-    image: "assets/news/news-2.jpg",
-    link: "news.html"
+    title: "Next Stop: Huntsville Speedway",
+    text: "Reed Family Racing prepares for another race weekend at Huntsville Speedway.",
+    image: "assets/news/next-stop-huntsville-speedway.jpg",
+    link: "news/next-stop-huntsville-speedway.html"
   },
   {
-    title: "Latest Story Three",
-    text: "See another recent update from the team.",
-    image: "assets/news/news-3.jpg",
-    link: "news.html"
+    title: "The Racer's Mentality",
+    text: "Competing hard. Helping harder.",
+    image: "assets/trackside/trackside-thoughts.jpg",
+    link: "trackside/the-racers-mentality.html"
   }
 ];
 
@@ -77,20 +77,35 @@ function updateHomeStory() {
   if (!homeStoryLink || !homeStoryImage || !homeStoryTitle || !homeStoryText) return;
 
   const story = homeStories[homeStoryIndex];
+
   homeStoryLink.href = story.link;
   homeStoryImage.src = story.image;
+  homeStoryImage.alt = story.title;
   homeStoryTitle.textContent = story.title;
   homeStoryText.textContent = story.text;
 }
 
-if (homeStoryPrev && homeStoryNext) {
-  homeStoryPrev.addEventListener("click", () => {
-    homeStoryIndex = (homeStoryIndex - 1 + homeStories.length) % homeStories.length;
-    updateHomeStory();
-  });
-
-  homeStoryNext.addEventListener("click", () => {
-    homeStoryIndex = (homeStoryIndex + 1) % homeStories.length;
-    updateHomeStory();
-  });
+function showPreviousHomeStory() {
+  homeStoryIndex = (homeStoryIndex - 1 + homeStories.length) % homeStories.length;
+  updateHomeStory();
 }
+
+function showNextHomeStory() {
+  homeStoryIndex = (homeStoryIndex + 1) % homeStories.length;
+  updateHomeStory();
+}
+
+if (homeStoryPrev) {
+  homeStoryPrev.addEventListener("click", showPreviousHomeStory);
+}
+
+if (homeStoryNext) {
+  homeStoryNext.addEventListener("click", showNextHomeStory);
+}
+
+/* Auto-scroll homepage stories every 6 seconds */
+if (homeStoryLink) {
+  setInterval(showNextHomeStory, 6000);
+}
+
+updateHomeStory();
