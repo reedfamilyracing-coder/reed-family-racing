@@ -834,3 +834,24 @@
   line-height: 1.8;
   text-indent: 28px;
 }
+
+const homeStories = [
+  {
+    title: "Next Stop: Huntsville Speedway",
+    text: "Reed Family Racing prepares for another race weekend at Huntsville Speedway.",
+    image: "assets/news/next-stop-huntsville-speedway.jpg",
+    link: "news/next-stop-huntsville-speedway.html"
+  },
+  {
+    title: "The Racer's Mentality",
+    text: "Competing hard. Helping harder.",
+    image: "assets/trackside/trackside-thoughts.jpg",
+    link: "trackside/the-racers-mentality.html"
+  },
+  {
+    title: "Story Three Coming Soon",
+    text: "Another Reed Family Racing story will be added soon.",
+    image: "assets/news/news-3.jpg",
+    link: "news.html"
+  }
+];
