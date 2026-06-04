@@ -808,3 +808,23 @@
 .logo-link {
   justify-self: center !important;
 }
+
+.text-only-card {
+  padding: 28px;
+  border-left: 6px solid var(--red);
+}
+
+.trackside-date {
+  color: var(--muted);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.text-only-card span {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--red);
+  font-weight: 900;
+  text-transform: uppercase;
+}
