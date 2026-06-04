@@ -43,57 +43,51 @@ if (teamPrevButton && teamNextButton) {
   });
 }
 
-const homeStories = [
-  {
-    title: "Highland Rim Recap",
-    text: "Read the latest update from Reed Family Racing.",
-    image: "assets/news/highland-rim-recap.jpg",
-    link: "news/highland-rim-recap.html"
-  },
-  {
-    title: "Next Stop: Huntsville Speedway",
-    text: "Reed Family Racing prepares for another race weekend at Huntsville Speedway.",
-    image: "assets/news/next-stop-huntsville-speedway.jpg",
-    link: "news/next-stop-huntsville-speedway.html"
-  },
-  {
-    title: "The Racer's Mentality",
-    text: "Competing hard. Helping harder.",
-    image: "assets/trackside/trackside-thoughts.jpg",
-    link: "trackside/the-racers-mentality.html"
-  }
-];
-
 let homeStoryIndex = 0;
 
-const homeStoryLink = document.getElementById("homeStoryLink");
-const homeStoryImage = document.getElementById("homeStoryImage");
-const homeStoryTitle = document.getElementById("homeStoryTitle");
-const homeStoryText = document.getElementById("homeStoryText");
+const homeStoryTrack = document.getElementById("homeStoryTrack");
+const homeStorySlides = document.querySelectorAll(".home-story-slide");
 const homeStoryPrev = document.querySelector("[data-home-story-prev]");
 const homeStoryNext = document.querySelector("[data-home-story-next]");
 
-function updateHomeStory() {
-  if (!homeStoryLink || !homeStoryImage || !homeStoryTitle || !homeStoryText) return;
+function updateHomeStorySlider() {
+  if (!homeStoryTrack || homeStorySlides.length === 0) return;
 
-  const story = homeStories[homeStoryIndex];
-
-  homeStoryLink.href = story.link;
-  homeStoryImage.src = story.image;
-  homeStoryImage.alt = story.title;
-  homeStoryTitle.textContent = story.title;
-  homeStoryText.textContent = story.text;
+  homeStoryTrack.style.transform = `translateX(-${homeStoryIndex * 100}%)`;
 }
 
 function showPreviousHomeStory() {
-  homeStoryIndex = (homeStoryIndex - 1 + homeStories.length) % homeStories.length;
-  updateHomeStory();
+  if (homeStorySlides.length === 0) return;
+
+  homeStoryIndex =
+    (homeStoryIndex - 1 + homeStorySlides.length) % homeStorySlides.length;
+
+  updateHomeStorySlider();
 }
 
 function showNextHomeStory() {
-  homeStoryIndex = (homeStoryIndex + 1) % homeStories.length;
-  updateHomeStory();
+  if (homeStorySlides.length === 0) return;
+
+  homeStoryIndex =
+    (homeStoryIndex + 1) % homeStorySlides.length;
+
+  updateHomeStorySlider();
 }
+
+if (homeStoryPrev) {
+  homeStoryPrev.addEventListener("click", showPreviousHomeStory);
+}
+
+if (homeStoryNext) {
+  homeStoryNext.addEventListener("click", showNextHomeStory);
+}
+
+/* Auto-scroll homepage stories every 6 seconds */
+if (homeStoryTrack && homeStorySlides.length > 1) {
+  setInterval(showNextHomeStory, 6000);
+}
+
+updateHomeStorySlider();
 
 if (homeStoryPrev) {
   homeStoryPrev.addEventListener("click", showPreviousHomeStory);
