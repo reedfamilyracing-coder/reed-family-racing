@@ -828,3 +828,9 @@
   font-weight: 900;
   text-transform: uppercase;
 }
+
+.trackside-article p {
+  margin-bottom: 22px;
+  line-height: 1.8;
+  text-indent: 28px;
+}
