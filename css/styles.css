@@ -906,6 +906,7 @@ const homeStories = [
 }
 
 .year-gallery-card {
+  display: block;
   background: #1c1c1c;
   border: 2px solid rgba(255,255,255,0.12);
   border-radius: 18px;
