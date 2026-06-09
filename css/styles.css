@@ -937,6 +937,7 @@ const homeStories = [
 .media-photo-grid img {
   width: 100% !important;
   height: 260px !important;
-  object-fit: cover !important;
+  object-fit: contain !important;
+  background: #111;
   border-radius: 14px !important;
 }
