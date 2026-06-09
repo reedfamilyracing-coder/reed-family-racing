@@ -927,3 +927,16 @@ const homeStories = [
   margin: 0;
   font-size: 2rem;
 }
+
+.media-photo-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 22px !important;
+}
+
+.media-photo-grid img {
+  width: 100% !important;
+  height: 260px !important;
+  object-fit: cover !important;
+  border-radius: 14px !important;
+}
