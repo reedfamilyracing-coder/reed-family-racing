@@ -893,3 +893,36 @@ const homeStories = [
   max-width: 100%;
   flex: 0 0 100%;
 }
+
+.gallery-back-btn {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.year-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.year-gallery-card {
+  background: #1c1c1c;
+  border: 2px solid rgba(255,255,255,0.12);
+  border-radius: 18px;
+  padding: 50px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.25s ease;
+}
+
+.year-gallery-card:hover {
+  transform: translateY(-5px);
+  border-color: #d50000;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.year-gallery-card h2 {
+  margin: 0;
+  font-size: 2rem;
+}
