@@ -941,3 +941,12 @@ const homeStories = [
   background: #111;
   border-radius: 14px !important;
 }
+
+.milestone-card {
+  background: #1c1c1c;
+  border-radius: 18px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 650px; /* Adjust as needed */
+}
