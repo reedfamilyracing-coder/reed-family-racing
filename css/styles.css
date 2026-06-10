@@ -982,3 +982,7 @@ const homeStories = [
   object-fit: contain;
   background: #111;
 }
+
+.shop-media-card img {
+  object-position: center 80% !important;
+}
