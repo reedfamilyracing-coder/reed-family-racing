@@ -1042,3 +1042,63 @@ const homeStories = [
     grid-template-columns: 1fr;
   }
 }
+
+.merch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.merch-card {
+    text-align: center;
+}
+
+.shirt-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #111;
+}
+
+.shirt-container img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.35s ease;
+}
+
+.shirt-front {
+    opacity: 1;
+}
+
+.shirt-back {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.shirt-container:hover .shirt-front {
+    opacity: 0;
+}
+
+.shirt-container:hover .shirt-back {
+    opacity: 1;
+}
+
+.merch-details h2 {
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.merch-description {
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.merch-price {
+    color: #ffd700;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
