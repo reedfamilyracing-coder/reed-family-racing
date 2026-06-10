@@ -1102,3 +1102,15 @@ const homeStories = [
     font-weight: 700;
     margin: 0;
 }
+
+.merch-card {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.merch-card:hover {
+  transform: translateY(-5px);
+}
