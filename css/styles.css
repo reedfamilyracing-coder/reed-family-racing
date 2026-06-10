@@ -962,3 +962,9 @@ const homeStories = [
   display: flex;
   flex-direction: column;
 }
+
+.bandolero-page .media-category-card img,
+.bandolero-page .year-gallery-card img {
+  object-fit: contain !important;
+  background: #111;
+}
