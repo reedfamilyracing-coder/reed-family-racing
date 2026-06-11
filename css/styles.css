@@ -1198,3 +1198,8 @@ const homeStories = [
   font-weight: 900;
   margin: 0;
 }
+
+.shop-media-card img {
+  object-fit: cover !important;
+  object-position: center 85% !important;
+}
