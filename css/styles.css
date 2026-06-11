@@ -1157,3 +1157,43 @@ const homeStories = [
   border-color: #ff2a2a !important;
   box-shadow: 0 15px 35px rgba(215, 0, 0, 0.35);
 }
+
+.merch-product-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.merch-product-image img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.merch-product-details h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+.shirt-size-select,
+.shirt-quantity {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.2);
+  background: #111;
+  color: #fff;
+  font-size: 1rem;
+  width: 250px;
+}
+
+@media (max-width: 850px) {
+  .merch-product-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .merch-product-details {
+    text-align: center;
+  }
+}
