@@ -103,3 +103,11 @@ if (homeStoryLink) {
 }
 
 updateHomeStory();
+
+function changeShirtImage(imageSrc) {
+  const mainImage = document.getElementById("mainShirtImage");
+
+  if (mainImage) {
+    mainImage.src = imageSrc;
+  }
+}
