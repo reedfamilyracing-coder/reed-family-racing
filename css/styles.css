@@ -1377,3 +1377,9 @@ const homeStories = [
     grid-template-columns: 1fr;
   }
 }
+
+.news-card-logo {
+  object-fit: contain !important;
+  background: #111;
+  padding: 18px;
+}
