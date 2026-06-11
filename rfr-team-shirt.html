@@ -1,1 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>RFR Team Shirt | Reed Family Racing</title>
+  <meta name="description" content="Official Reed Family Racing Team Shirt">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <nav class="main-nav" aria-label="Main navigation">
+
+    <div class="nav-side nav-left">
+
+      <a href="index.html">Home</a>
+
+      <div class="nav-dropdown">
+        <a href="schedule.html" class="dropdown-main">Schedule</a>
+
+        <div class="dropdown-menu">
+          <a href="past-races.html">Results</a>
+        </div>
+      </div>
+
+      <div class="nav-dropdown">
+        <a href="team.html" class="dropdown-main">Team</a>
+
+        <div class="dropdown-menu">
+
+          <a href="tw-reed.html" class="dropdown-driver-link">
+            <img src="assets/numbers/53.png" alt="#53" class="dropdown-number-img">
+            <span>TW Reed</span>
+          </a>
+
+          <a href="logan-conner.html" class="dropdown-driver-link">
+            <img src="assets/numbers/52.png" alt="#52" class="dropdown-number-img">
+            <span>Logan Conner</span>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="nav-dropdown">
+        <a href="news.html" class="dropdown-main">News</a>
+
+        <div class="dropdown-menu">
+          <a href="trackside-thoughts.html">Trackside Thoughts</a>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="logo-link" href="index.html">
+      <img src="assets/logos/rfr-logo.png"
+           alt="Reed Family Racing Logo"
+           class="site-logo">
+    </a>
+
+    <div class="nav-side nav-right">
+      <a href="media.html">Media</a>
+      <a href="sponsors.html">Sponsors</a>
+      <a href="merch.html">Merch</a>
+    </div>
+
+    <button class="menu-toggle">☰</button>
+
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="team.html">Team</a>
+    <a href="tw-reed.html">#53 TW Reed</a>
+    <a href="logan-conner.html">#52 Logan Conner</a>
+    <a href="news.html">News</a>
+    <a href="media.html">Media</a>
+    <a href="sponsors.html">Sponsors</a>
+    <a href="merch.html">Merch</a>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+
+<main>
+
+  <section class="page-hero">
+    <h1>RFR Team Shirt</h1>
+    <p>Official Reed Family Racing apparel.</p>
+  </section>
+
+  <section class="content-section">
+
+    <a href="merch.html" class="history-btn gallery-back-btn">
+      ← Back to Merch
+    </a>
+
+    <div class="merch-product-layout">
+
+      <div class="merch-product-image">
+
+        <img src="assets/merch/rfr-team-shirt-front.png"
+             alt="RFR Team Shirt">
+
+      </div>
+
+      <div class="merch-product-details">
+
+        <h2>RFR Team Shirt</h2>
+
+        <p class="merch-description">
+          Show your support for Reed Family Racing with our official team shirt.
+          Featuring the RFR logo across the chest, this shirt matches the look
+          worn by the crew at the racetrack.
+        </p>
+
+        <p class="merch-price">$25</p>
+
+        <label for="shirt-size"><strong>Size:</strong></label>
+
+        <select id="shirt-size" class="shirt-size-select">
+
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+          <option>XL</option>
+          <option>2XL (+$3)</option>
+          <option>3XL (+$5)</option>
+          <option>4XL (+$7)</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="shirt-quantity"><strong>Quantity:</strong></label>
+
+        <input type="number"
+               id="shirt-quantity"
+               value="1"
+               min="1"
+               class="shirt-quantity">
+
+        <br><br><br>
+
+        <!-- PAYPAL BUTTON GOES HERE -->
+
+        <button class="history-btn">
+          Add to Cart (Coming Soon)
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<!-- SOCIAL -->
+
+<section class="social-section">
+
+  <h2>Follow Us On Our Social Media</h2>
+
+  <div class="social-links">
+
+    <a href="https://www.facebook.com/reedfamilyracing/">
+      <img src="assets/social/facebook.png" alt="Facebook">
+    </a>
+
+    <a href="https://www.instagram.com/reedfamilyracing/">
+      <img src="assets/social/instagram.png" alt="Instagram">
+    </a>
+
+    <a href="https://www.youtube.com/@reedfamilyracing">
+      <img src="assets/social/youtube.png" alt="YouTube">
+    </a>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<section class="footer-nav-section">
+
+  <a href="index.html" class="footer-logo-link">
+
+    <img src="assets/logos/rfr-logo.png"
+         alt="Reed Family Racing Logo">
+
+  </a>
+
+  <nav class="footer-nav-links">
+
+    <a href="index.html">Home</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="team.html">Team</a>
+    <a href="news.html">News</a>
+    <a href="media.html">Media</a>
+    <a href="sponsors.html">Sponsors</a>
+    <a href="merch.html">Merch</a>
+
+  </nav>
+
+</section>
+
+<footer class="site-footer">
+
+  <p>© <span id="year"></span> Reed Family Racing</p>
+
+</footer>
+
+<script src="js/site.js"></script>
+
+</body>
+</html>
