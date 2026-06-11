@@ -1148,3 +1148,12 @@ const homeStories = [
   object-fit: cover !important;
   object-position: center bottom !important;
 }
+
+.merch-card {
+  border: 2px solid #d50000 !important;
+}
+
+.merch-card:hover {
+  border-color: #ff2a2a !important;
+  box-shadow: 0 15px 35px rgba(215, 0, 0, 0.35);
+}
