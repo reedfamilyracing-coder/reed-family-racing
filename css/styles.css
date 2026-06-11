@@ -983,10 +983,6 @@ const homeStories = [
   background: #111;
 }
 
-.shop-media-card img {
-  object-position: center 90% !important;
-}
-
 .merch-section {
   width: min(1150px, 94vw);
 }
