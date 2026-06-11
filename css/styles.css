@@ -1111,7 +1111,7 @@ const homeStories = [
 .shop-media-card img {
   aspect-ratio: 16 / 10;
   object-fit: cover;
-  object-position: center 80%;
+  object-position: center 50%;
 }
 
 .merch-grid {
