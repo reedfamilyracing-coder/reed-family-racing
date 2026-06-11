@@ -1113,9 +1113,9 @@ const homeStories = [
 }
 
 .shop-media-card img {
-  height: 260px !important;
-  object-fit: cover !important;
-  object-position: center top !important;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center 80%;
 }
 
 .merch-grid {
