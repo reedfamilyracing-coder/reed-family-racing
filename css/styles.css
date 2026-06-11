@@ -1422,3 +1422,12 @@ const homeStories = [
 .event-info-box strong {
   color: #fff;
 }
+
+.media-category-card.shop-media-card img {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 10 !important;
+  object-fit: cover !important;
+  object-position: center bottom !important;
+  display: block !important;
+}
