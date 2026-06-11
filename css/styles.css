@@ -1113,7 +1113,7 @@ const homeStories = [
 }
 
 .shop-media-card img {
-  height: 2260px !important;
+  height: 260px !important;
   object-fit: cover !important;
   object-position: center top !important;
 }
