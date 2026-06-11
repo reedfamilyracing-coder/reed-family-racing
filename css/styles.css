@@ -1055,29 +1055,6 @@ const homeStories = [
   padding: 18px;
 }
 
-.shirt-container img {
-  width: 100%;
-  height: 360px;
-  object-fit: contain;
-  display: block;
-}
-
-.shirt-back {
-  display: none;
-}
-
-.shirt-container:hover .shirt-front {
-  opacity: 1;
-}
-
-.shirt-container:hover .shirt-front {
-    opacity: 0;
-}
-
-.shirt-container:hover .shirt-back {
-    opacity: 1;
-}
-
 .merch-details h2 {
     color: #ffffff;
     margin-top: 20px;
@@ -1139,4 +1116,31 @@ const homeStories = [
   height: 2260px !important;
   object-fit: cover !important;
   object-position: center top !important;
+}
+
+.merch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+  gap: 30px;
+  justify-content: center;
+}
+
+.merch-card {
+  max-width: 320px;
+  padding: 18px;
+}
+
+.shirt-container img {
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+  display: block;
+}
+
+.shirt-back {
+  display: none;
+}
+
+.shirt-container:hover .shirt-front {
+  opacity: 1;
 }
