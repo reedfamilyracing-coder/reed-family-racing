@@ -1202,5 +1202,5 @@ const homeStories = [
 .shop-media-card img {
   height: 260px !important;
   object-fit: cover !important;
-  object-position: center bottom !important;
+  object-position: center top !important;
 }
