@@ -1383,3 +1383,22 @@ const homeStories = [
   background: #111;
   padding: 18px;
 }
+
+.article-share-icons {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.article-share-icons img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.article-share-icons img:hover {
+  transform: scale(1.12);
+}
