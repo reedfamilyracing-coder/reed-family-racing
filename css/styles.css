@@ -1150,12 +1150,13 @@ const homeStories = [
 }
 
 .merch-card {
-  border: 2px solid #d50000 !important;
+  transition: all 0.25s ease;
 }
 
 .merch-card:hover {
-  border-color: #ff2a2a !important;
-  box-shadow: 0 15px 35px rgba(215, 0, 0, 0.35);
+  transform: translateY(-5px);
+  border-color: #d50000;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
 }
 
 .merch-product-layout {
