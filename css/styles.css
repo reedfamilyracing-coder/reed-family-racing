@@ -1524,3 +1524,33 @@ const homeStories = [
   left: 0;
   font-weight: 700;
 }
+
+@media (max-width: 768px) {
+  .tw-profile-layout {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .tw-photo-column {
+    order: 1 !important;
+  }
+
+  .tw-info-column {
+    order: 2 !important;
+    text-align: center !important;
+  }
+
+  .tw-career-synopsis {
+    order: 3 !important;
+  }
+
+  .tw-driver-photo {
+    width: 100% !important;
+    max-width: 420px !important;
+    margin: 0 auto 25px !important;
+  }
+
+  .tw-signature {
+    margin: 0 auto 25px !important;
+  }
+}
