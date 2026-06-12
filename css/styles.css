@@ -1493,3 +1493,34 @@ const homeStories = [
     padding-top: 0px !important;
   }
 }
+
+.product-details {
+  margin: 25px 0;
+}
+
+.product-details h3 {
+  color: #ffffff;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.product-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-details li {
+  color: #ffffff;
+  margin-bottom: 10px;
+  padding-left: 22px;
+  position: relative;
+}
+
+.product-details li::before {
+  content: "•";
+  color: #ffd700;
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
