@@ -1440,3 +1440,14 @@ const homeStories = [
   line-height: 1.5;
   text-align: left;
 }
+
+@media (max-width: 840px) {
+  .home-photo-banner {
+    height: 420px;
+    margin-top: 0;
+  }
+
+  .home-photo-banner img {
+    object-position: center top;
+  }
+}
