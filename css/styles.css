@@ -1554,3 +1554,35 @@ const homeStories = [
     margin: 0 auto 25px !important;
   }
 }
+
+@media (max-width: 768px) {
+  .logan-page .tw-profile-layout {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .logan-page .tw-photo-column {
+    order: 1 !important;
+  }
+
+  .logan-page .tw-info-column {
+    order: 2 !important;
+    text-align: center !important;
+  }
+
+  .logan-page .logan-career-synopsis,
+  .logan-page .tw-career-synopsis {
+    order: 3 !important;
+  }
+
+  .logan-page .tw-driver-photo {
+    width: 100% !important;
+    max-width: 420px !important;
+    margin: 0 auto 25px !important;
+  }
+
+  .logan-page .tw-signature,
+  .logan-page .logan-signature-full {
+    margin: 0 auto 25px !important;
+  }
+}
