@@ -1444,7 +1444,7 @@ const homeStories = [
 @media (max-width: 840px) {
   .home-photo-banner {
     height: 420px;
-    margin-top: 0;
+    margin-top: 5;
   }
 
   .home-photo-banner img {
@@ -1479,5 +1479,11 @@ const homeStories = [
 
   .content-section {
     width: 92vw !important;
+  }
+}
+
+@media (max-width: 840px) {
+  .home-photo-banner {
+    margin-bottom: 5px !important;
   }
 }
