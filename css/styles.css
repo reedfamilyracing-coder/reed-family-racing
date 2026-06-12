@@ -1487,3 +1487,9 @@ const homeStories = [
     margin-bottom: 5px !important;
   }
 }
+
+@media (max-width: 840px) {
+  .home-story-section {
+    padding-top: 5px !important;
+  }
+}
