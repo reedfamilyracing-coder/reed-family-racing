@@ -1484,12 +1484,12 @@ const homeStories = [
 
 @media (max-width: 840px) {
   .home-photo-banner {
-    margin-bottom: 5px !important;
+    margin-bottom: 0px !important;
   }
 }
 
 @media (max-width: 840px) {
   .home-story-section {
-    padding-top: 5px !important;
+    padding-top: 0px !important;
   }
 }
