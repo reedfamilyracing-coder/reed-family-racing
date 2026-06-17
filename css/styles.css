@@ -1588,7 +1588,7 @@ const homeStories = [
 
 .merch-card img {
   width: 100% !important;
-  height: 320px !important;
+  height: 260px !important;
   object-fit: contain !important;
   display: block !important;
   background: #111;
