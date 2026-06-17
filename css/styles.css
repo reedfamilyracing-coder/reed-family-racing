@@ -1585,3 +1585,12 @@ const homeStories = [
     margin: 0 auto 25px !important;
   }
 }
+
+.merch-card img {
+  width: 100% !important;
+  height: 320px !important;
+  object-fit: contain !important;
+  display: block !important;
+  background: #111;
+  border-radius: 14px;
+}
