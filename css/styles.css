@@ -1612,3 +1612,33 @@ const homeStories = [
     grid-template-columns: 1fr !important;
   }
 }
+
+.merch-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 30px !important;
+}
+
+.merch-card {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.shirt-container img,
+.merch-card img {
+  width: 100% !important;
+  height: 320px !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 900px) {
+  .merch-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .merch-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
