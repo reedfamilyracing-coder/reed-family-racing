@@ -1642,3 +1642,15 @@ const homeStories = [
     grid-template-columns: 1fr !important;
   }
 }
+
+.paypal-button-area {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+
+.merch-details .paypal-button-area {
+  width: 100%;
+}
