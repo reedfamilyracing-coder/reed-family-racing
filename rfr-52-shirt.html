@@ -138,36 +138,15 @@
     </ul>
   </div>
         
-        <label for="shirt-size">Size</label>
-        <select id="shirt-size" class="shirt-size-select">
-          <option>Select Size</option>
-          <option>Small</option>
-          <option>Medium</option>
-          <option>Large</option>
-          <option>XL</option>
-          <option>2XL</option>
-          <option>3XL</option>
-          <option>4XL</option>
-        </select>
+       <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+<script>
+  cartPaypal.Cart({ id: "pp-view-cart" })
+</script>
 
-        <label for="shirt-quantity">Quantity</label>
-        <select id="shirt-size" class="shirt-size-select">
-          <option>Quantity</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-          <option>9</option>
-          <option>10</option>
-        </select>
-
-        <button class="history-btn product-cart-btn">
-          Add to Cart
-        </button>
+<paypal-add-to-cart-button data-id="KEKX2WTKQATVL"></paypal-add-to-cart-button>
+<script>
+  cartPaypal.AddToCart({ id: "KEKX2WTKQATVL" })
+</script>
 
       </div>
 
