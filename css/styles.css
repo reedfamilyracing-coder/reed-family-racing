@@ -1672,3 +1672,25 @@ const homeStories = [
   width: 100% !important;
   min-width: 280px !important;
 }
+
+.news-preview-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 30px !important;
+}
+
+.news-preview-card {
+  width: 100% !important;
+}
+
+@media (max-width: 900px) {
+  .news-preview-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .news-preview-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
