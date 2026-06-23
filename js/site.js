@@ -113,33 +113,39 @@ function changeShirtImage(imageSrc) {
 }
 
 // Media gallery lightbox
-const galleryImages = Array.from(document.querySelectorAll(".media-photo-grid img"));
-
-if (galleryImages.length > 0) {
-  let currentLightboxIndex = 0;
+(function () {
+  const gallerySelector = ".media-photo-grid img";
+  let currentIndex = 0;
 
   const lightbox = document.createElement("div");
   lightbox.className = "lightbox-overlay";
   lightbox.innerHTML = `
-    <button class="lightbox-close" aria-label="Close photo">×</button>
-    <button class="lightbox-prev" aria-label="Previous photo">‹</button>
+    <button class="lightbox-close" type="button" aria-label="Close photo">×</button>
+    <button class="lightbox-prev" type="button" aria-label="Previous photo">‹</button>
     <img class="lightbox-image" src="" alt="">
-    <button class="lightbox-next" aria-label="Next photo">›</button>
+    <button class="lightbox-next" type="button" aria-label="Next photo">›</button>
   `;
 
-  document.body.appendChild(lightbox);
+  document.addEventListener("DOMContentLoaded", function () {
+    document.body.appendChild(lightbox);
+  });
 
   const lightboxImage = lightbox.querySelector(".lightbox-image");
   const closeButton = lightbox.querySelector(".lightbox-close");
   const prevButton = lightbox.querySelector(".lightbox-prev");
   const nextButton = lightbox.querySelector(".lightbox-next");
 
-  function openLightbox(index) {
-    currentLightboxIndex = index;
-    const selectedImage = galleryImages[currentLightboxIndex];
+  function getGalleryImages() {
+    return Array.from(document.querySelectorAll(gallerySelector));
+  }
 
-    lightboxImage.src = selectedImage.src;
-    lightboxImage.alt = selectedImage.alt || "Gallery photo";
+  function openLightbox(index) {
+    const images = getGalleryImages();
+    if (!images.length) return;
+
+    currentIndex = index;
+    lightboxImage.src = images[currentIndex].src;
+    lightboxImage.alt = images[currentIndex].alt || "Gallery photo";
 
     lightbox.classList.add("active");
     document.body.style.overflow = "hidden";
@@ -151,38 +157,46 @@ if (galleryImages.length > 0) {
   }
 
   function showPrevImage() {
-    currentLightboxIndex =
-      (currentLightboxIndex - 1 + galleryImages.length) % galleryImages.length;
-    openLightbox(currentLightboxIndex);
+    const images = getGalleryImages();
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    openLightbox(currentIndex);
   }
 
   function showNextImage() {
-    currentLightboxIndex =
-      (currentLightboxIndex + 1) % galleryImages.length;
-    openLightbox(currentLightboxIndex);
+    const images = getGalleryImages();
+    currentIndex = (currentIndex + 1) % images.length;
+    openLightbox(currentIndex);
   }
 
-  galleryImages.forEach((image, index) => {
-    image.addEventListener("click", () => {
+  document.addEventListener("click", function (event) {
+    const clickedImage = event.target.closest(gallerySelector);
+    if (!clickedImage) return;
+
+    event.preventDefault();
+
+    const images = getGalleryImages();
+    const index = images.indexOf(clickedImage);
+
+    if (index !== -1) {
       openLightbox(index);
-    });
+    }
   });
 
   closeButton.addEventListener("click", closeLightbox);
   prevButton.addEventListener("click", showPrevImage);
   nextButton.addEventListener("click", showNextImage);
 
-  lightbox.addEventListener("click", (event) => {
+  lightbox.addEventListener("click", function (event) {
     if (event.target === lightbox) {
       closeLightbox();
     }
   });
 
-  document.addEventListener("keydown", (event) => {
+  document.addEventListener("keydown", function (event) {
     if (!lightbox.classList.contains("active")) return;
 
     if (event.key === "Escape") closeLightbox();
     if (event.key === "ArrowLeft") showPrevImage();
     if (event.key === "ArrowRight") showNextImage();
   });
-}
+})();
