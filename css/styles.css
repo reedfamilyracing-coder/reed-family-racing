@@ -1752,3 +1752,68 @@ const homeStories = [
   top: 50%;
   transform: translateY(-50%);
 }
+
+.media-photo-grid img {
+  cursor: pointer !important;
+}
+
+.rfr-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.94);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  padding: 30px;
+}
+
+.rfr-lightbox.open {
+  display: flex;
+}
+
+.rfr-lightbox-img {
+  max-width: 92vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.rfr-lightbox-close,
+.rfr-lightbox-prev,
+.rfr-lightbox-next {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  width: 48px;
+  height: 48px;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 1000000;
+}
+
+.rfr-lightbox-close {
+  top: 24px;
+  right: 24px;
+}
+
+.rfr-lightbox-prev {
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.rfr-lightbox-next {
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.rfr-lightbox-close:hover,
+.rfr-lightbox-prev:hover,
+.rfr-lightbox-next:hover {
+  background: #d50000;
+}
