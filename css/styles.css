@@ -1817,3 +1817,22 @@ const homeStories = [
 .rfr-lightbox-next:hover {
   background: #d50000;
 }
+
+.article-inline-image {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.article-inline-image img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.article-inline-image .photo-caption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+  font-style: italic;
+}
